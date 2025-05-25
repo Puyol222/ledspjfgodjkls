@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วันพิเศษของเรา 💖</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      font-family: 'Itim', cursive;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #ff3399;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .photo-gallery img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .love-letter {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .love-letter button {
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .love-letter button:hover {
+      background-color: #ff66a3;
+    }
+
+    #letterContent {
+      margin-top: 30px;
+      background: #fff0f5;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+      text-align: left;
+      line-height: 1.8;
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ข้อความด้านบน -->
+    <div class="intro">
+      <h1>ขอบคุณทุกช่วงเวลามากๆนะที่รัก 💕</h1>
+      <h2>เค้าจะรักที่รักตลอดไป 💖</h2>
+      <p>นี่คือบางช่วงเวลาที่เรามีร่วมกัน :)</p>
+    </div>
+
+    <!-- แกลเลอรี่รูป -->
+    <div class="photo-gallery">
+        <div class="photo-item">
+            <img src="assets/images/mem1.jpg" alt="ความทรงจำ 1">
+            <p class="caption">วันนั้นที่เราเจอกันตัวต่อตัวครั้งแรก</p>
+        </div>
+        <div class="photo-item">
+            <img src="assets/images/mem2.jpg" alt="ความทรงจำ 2">
+            <p class="caption">รอยยิ้มของเธอที่ทำให้เค้ามีความสุขมากๆๆๆ</p>
+        </div>
+        <div class="photo-item">
+            <img src="assets/images/mem3.jpg" alt="ความทรงจำ 3">
+            <p class="caption">ช่วงเวลาที่เราถ่ายรูปแล้วเค้าภูมิใจที่มีเธอมากๆ</p>
+        </div>
+    </div>
+
+    <!-- กล่องจดหมาย -->
+    <div class="love-letter">
+      <button onclick="openLetter()">📩 เปิดจดหมายจากใจฉัน</button>
+      <div id="letterContent">
+        <h2>จากใจของเค้าถึงเธอ ❤️</h2>
+        <p>ตั้งแต่วันที่เราได้รู้จักกัน ชีวิตเค้าก็เปลี่ยนไปในทางที่สวยงามขึ้นทุกวัน</p>
+        <p>ทุกเสียงหัวเราะ รอยยิ้ม และน้ำตา มันคือเรื่องราวที่เค้าไม่เคยอยากให้หายไปเลย</p>
+        <p>ขอบคุณที่อยู่ข้างๆกันเสมอ ไม่ว่าจะวันดีหรือวันที่แย่</p>
+        <p>ขอให้เราทั้งสองจับมือกันเดินไปข้างหน้าตลอดไปนะ</p>
+        <p>เค้ารักเธอมากที่สุดจริงๆ และอย่าลืมว่ากว่าเราจะคบกันได้ใช้เวลานานมากๆ</p>
+        <p>จับมือไปในอนาคตที่เราเคยวางไว้ให้สำเร็จนะที่รัก</p>
+        <p>รักเธอที่สุดในโลกเลย 💖</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById("letterContent").style.display = "block";
+    }
+  </script>
+</body>
+</html>
